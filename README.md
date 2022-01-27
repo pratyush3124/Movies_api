@@ -8,31 +8,41 @@ First import all the python dependencies in your virtual environment or globally
 Now you can run the api server by running the run.py file <br>
 `    python -m run`
 
+
 ## Documentation
 The root has some information about the api <br>
-`   GET /`
-will show the following output <br>
+- `   GET /` will show the following output
 <img src='/images/1.png' width=750>
 
+
 ### Read
-`   GET /movies/` will list all movies <br>
+- `   GET /movies/` will list all movies <br>
+
 <img src='/images/2-1.png' width=750><br>
 <img src='/images/2-2.png' width=500><br>
-<img src='/images/2-3.png' width=500>
+<img src='/images/2-3.png' width=500><br>
 
+- `   GET /movies/<movieId>` will return the movie with the given id <br>
 
-`   GET /movies/<movieId>` will return the movie with the given id
 <img src='/images/3.png' width=750><br>
 
 ### Create
-`   POST /createMovie/` will create the movie record with given information in the body
+- `   POST /createMovie/` will create the movie record with given information in the body <br>
+
 <img src='/images/4-1.png' width=750><br>
 <img src='/images/4-2.png' width=750><br>
 
 ### Update
-`   POST /movies/<movieId>` updates the information of the given movie
+- `   POST /movies/<movieId>` updates the information of the given movie <br>
+
 <img src='/images/5.png' width=750><br>
 
 ### Delete
-`   DELETE /movies/<moviesId>` deletes the movie record with the given id
+- `   DELETE /movies/<moviesId>` deletes the movie record with the given id <br>
+
 <img src='/images/6.png' width=750><br>
+
+#### Note
+If in any of the requests, if the movieId is doesn't exist then this will be returned <br>
+
+<img src='/images/7.png' width=750><br>
