@@ -43,6 +43,6 @@ The root has some information about the api <br>
 <img src='/images/6.png' width=750><br>
 
 #### Note
-If in any of the requests, if the movieId is doesn't exist then this will be returned <br>
+If in any of the requests, if the movieId doesn't exist then this will be returned <br>
 
 <img src='/images/7.png' width=750><br>
