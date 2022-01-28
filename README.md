@@ -27,7 +27,7 @@ The root has some information about the api <br>
 <img src='/images/3.png' width=750><br>
 
 ### Create
-- `   POST /createMovie/` will create the movie record with given information in the body and return the movie<br>
+- `   POST /createMovie/` will create the movie record with given information in the body and returns the movie<br>
 
 <img src='/images/4-1.png' width=750><br>
 <img src='/images/4-2.png' width=750><br>
@@ -38,7 +38,7 @@ The root has some information about the api <br>
 <img src='/images/5.png' width=750><br>
 
 ### Delete
-- `   DELETE /movies/<moviesId>` deletes the movie record with the given id and return success<br>
+- `   DELETE /movies/<moviesId>` deletes the movie record with the given id and returns success<br>
 
 <img src='/images/6.png' width=750><br>
 
