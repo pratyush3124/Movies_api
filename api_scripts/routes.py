@@ -1,6 +1,7 @@
 from flask import request
 from api_scripts import app
 from api_scripts.models import Movie
+import json
 
 @app.route('/')
 def main():
@@ -9,7 +10,8 @@ def main():
 @app.route('/movies/')
 def get_movies():
     # returns the list of all the movies
-    return Movie.objects().to_json()
+    movies = {'movies':json.loads(Movie.objects.to_json())}
+    return movies
 
 @app.route('/movies/<movieId>', methods=['GET'])
 def get_movie(movieId):
@@ -19,7 +21,7 @@ def get_movie(movieId):
         # returns error if wrong movieId
         return {'error':'no such movie found'}
     else:
-        return movie.to_json()
+        return json.loads(movie.to_json())
 
 @app.route('/createMovie/', methods=['POST'])
 def create_movie():
@@ -32,7 +34,7 @@ def create_movie():
         actors = request.json['actors'],
     )
     a = new_movie.save()
-    return a.to_json()
+    return json.loads(a.to_json())
 
 @app.route('/movies/<movieId>', methods=['POST'])
 def update_movie(movieId):
@@ -56,8 +58,9 @@ def update_movie(movieId):
 
         if 'actors' in request.json.keys():
             movie.actors = request.json['actors']
+
         a = movie.save()
-        return a.to_json()
+        return json.loads(a.to_json())
 
 @app.route('/movies/<movieId>', methods=['DELETE'])
 def delete_movie(movieId):
