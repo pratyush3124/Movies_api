@@ -27,22 +27,22 @@ The root has some information about the api <br>
 <img src='/images/3.png' width=750><br>
 
 ### Create
-- `   POST /createMovie/` will create the movie record with given information in the body <br>
+- `   POST /createMovie/` will create the movie record with given information in the body and returns the movie<br>
 
 <img src='/images/4-1.png' width=750><br>
 <img src='/images/4-2.png' width=750><br>
 
 ### Update
-- `   POST /movies/<movieId>` updates the information of the given movie <br>
+- `   POST /movies/<movieId>` updates the information of the given movie and returns the updated movie<br>
 
 <img src='/images/5.png' width=750><br>
 
 ### Delete
-- `   DELETE /movies/<moviesId>` deletes the movie record with the given id <br>
+- `   DELETE /movies/<moviesId>` deletes the movie record with the given id and returns success<br>
 
 <img src='/images/6.png' width=750><br>
 
 #### Note
-If in any of the requests, if the movieId is doesn't exist then this will be returned <br>
+If in any of the requests, if the movieId doesn't exist then this will be returned <br>
 
 <img src='/images/7.png' width=750><br>
