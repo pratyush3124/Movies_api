@@ -19,8 +19,7 @@ The root has some information about the api <br>
 - `   GET /movies/` will list all movies <br>
 
 <img src='/images/2-1.png' width=750><br>
-<img src='/images/2-2.png' width=500><br>
-<img src='/images/2-3.png' width=500><br>
+<img src='/images/2-2.png' width=750><br>
 
 - `   GET /movies/<movieId>` will return the movie with the given id <br>
 

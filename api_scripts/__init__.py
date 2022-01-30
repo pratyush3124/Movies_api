@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_mongoengine import MongoEngine
 
-DEV = True
+DEV = False
 
 # our flask app
 app = Flask(__name__)
